@@ -1,11 +1,10 @@
 import React from 'react';
 import Home from './Home';
+import Details from './Details';
 
 import {
   BrowserRouter as Router,
   Route,
-  // Switch,
-  // Link
 } from 'react-router-dom';
 
 export default function App() {
