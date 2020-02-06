@@ -1,0 +1,20 @@
+header {
+  background-attachment: fixed;
+  background-color: #cacaca;
+  margin: 0px 20vw 0px 20vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .Headlines {
+    margin: .3rem;
+  }
+
+  .Nav {
+    align-self: flex-end;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}

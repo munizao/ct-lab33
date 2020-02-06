@@ -1,0 +1,19 @@
+main {
+  ul {
+    margin: 2rem 0px 2rem 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      background-color: #da89f3;
+      margin: .3rem;
+      padding: .3rem;
+      border-radius: .5rem;
+      list-style-type: none;
+    }
+  }
+  .PageBar {
+
+  }
+}
