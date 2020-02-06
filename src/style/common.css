@@ -11,3 +11,27 @@
     background-color:  rgb(99, 221, 150);
   }
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20vw 0px 20vw;
+  ul {
+    margin: 2rem 0px 2rem 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      background-color: #da89f3;
+      margin: .3rem;
+      padding: .3rem;
+      border-radius: .5rem;
+      list-style-type: none;
+    }
+  }
+  .PageBar {
+
+  }
+}

@@ -1,14 +1,6 @@
-header {
-  margin: 0px 20vw 0px 20vw;
-  h1 {
-    margin: .3rem;
-  }
-}
-
-.Main {
-  margin: 0px 20vw 0px 20vw;
+main {
   ul {
-    margin: 0px;
+    margin: 2rem 0px 2rem 0px;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -20,5 +12,8 @@ header {
       border-radius: .5rem;
       list-style-type: none;
     }
+  }
+  .PageBar {
+
   }
 }
