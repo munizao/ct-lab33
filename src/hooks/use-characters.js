@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
-import usePaging from './use-paging';
 import { charactersAPI } from '../services/last-airbender-api';
 
-const useCharacters = () => {
+const useCharacters = (page) => {
   const [characters, setCharacters] = useState([]);
-  const { page, prevPage, nextPage } = usePaging();
+
 
   const fetchCharacters = () => {
     charactersAPI(page)
@@ -18,7 +17,7 @@ const useCharacters = () => {
   }, [page]);
 
 
-  return { characters, page, prevPage, nextPage };
+  return { characters };
 };
 
 export default useCharacters;

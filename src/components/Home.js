@@ -1,25 +1,36 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './Home.css';
-import commonStyles from '../style/common.css'
+import commonStyles from '../style/common.css';
 import useCharacters from '../hooks/use-characters';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
-const Home = () => {
-  const { characters, page, prevPage, nextPage } = useCharacters();
+
+const Home = ({ page, prevPage, nextPage }) => {
+  const { characters } = useCharacters(page);
 
   return (
     <>
-      <header><h1>Character List:</h1></header>
+      <Header subhead={'Character List'}/>
       <main>
-        <div className={styles.Main}>
-          <ul>
-            {characters.map((character) => <li key={character._id}><Link to={`/details/${character._id}`}>{character.name}</Link></li>)}
-          </ul>
-          <span onClick={prevPage} className={commonStyles.Buttonish}>Previous</span><span onClick={nextPage} className={commonStyles.Buttonish}>next</span>
+        <ul>
+          {characters.map((character) => <li key={character._id}><Link to={`/details/${character._id}`}>{character.name}</Link></li>)}
+        </ul>
+        <div className={styles.PageBar}>
+          <span onClick={prevPage} className={commonStyles.Buttonish}>Previous</span>
+          <span>Page: {page}</span>
+          <span onClick={nextPage} className={commonStyles.Buttonish}>Next</span>
         </div>
       </main>
     </>
   );
+};
+
+Home.propTypes = {
+  page: PropTypes.number.isRequired,
+  prevPage: PropTypes.func.isRequired,
+  nextPage: PropTypes.func.isRequired
 };
 
 export default Home;
