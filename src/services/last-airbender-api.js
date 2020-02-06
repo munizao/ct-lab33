@@ -2,3 +2,10 @@ export const charactersAPI = (page) => {
   return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/?page=${page}`)
     .then(res => res.json());
 };
+
+export const detailsAPI = (id) => {
+  return fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`)
+    .then(res => {
+      return res.json();
+    });
+};
