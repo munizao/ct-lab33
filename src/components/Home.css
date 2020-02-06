@@ -1,0 +1,24 @@
+header {
+  margin: 0px 20vw 0px 20vw;
+  h1 {
+    margin: .3rem;
+  }
+}
+
+.Main {
+  margin: 0px 20vw 0px 20vw;
+  ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    li {
+      background-color: #da89f3;
+      margin: .3rem;
+      padding: .3rem;
+      border-radius: .5rem;
+      list-style-type: none;
+    }
+  }
+}

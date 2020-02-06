@@ -1,0 +1,13 @@
+.Buttonish {
+  text-align: center;
+  width: 7em;
+  font-size: .7em;
+  margin: .5em;
+  padding: .8em;
+  border-radius: .45em;
+  color: #ffffff;
+  background-color: rgb(44, 129, 79);
+  &:hover {
+    background-color:  rgb(99, 221, 150);
+  }
+}
