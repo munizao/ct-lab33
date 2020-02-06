@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <p>Character List:</p>
       <ul>
-        {characters.map((character) => <li key={character._id}><Link to={`/${character._id}`}>{character.name}</Link></li>)}
+        {characters.map((character) => <li key={character._id}><Link to={`/details/${character._id}`}>{character.name}</Link></li>)}
       </ul>
     </div>
   );
