@@ -1,1 +1,1 @@
-[Deplyed via Netlify] (https://confident-snyder-8c61b4.netlify.com/)
+[Deployed via Netlify] (https://confident-snyder-8c61b4.netlify.com/)
