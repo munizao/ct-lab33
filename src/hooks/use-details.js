@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { detailsAPI } from '../services/last-airbender-api';
 
 const useDetails = () => {
-  const [details, setDetails] = useState({name: 'Aang'});
+  const [details, setDetails] = useState({});
   const params = useParams(); 
   const fetchDetails = () => {
     detailsAPI(params.charId)
